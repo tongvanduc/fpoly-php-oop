@@ -1,0 +1,18 @@
+{
+    "name": "ductv44/php-oop",
+    "autoload": {
+        "psr-4": {
+            "Ductv44\\PhpOop\\": "src/"
+        },
+        "files": [
+            "helper.php"
+        ]
+    },
+    "require": {
+        "bramus/router": "~1.6",
+        "vlucas/phpdotenv": "^5.6",
+        "doctrine/dbal": "^4.0",
+        "eftec/bladeone": "^4.13",
+        "rakit/validation": "^1.4"
+    }
+}
