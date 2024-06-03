@@ -130,7 +130,7 @@ class ProductController extends Controller
         if ($validation->fails()) {
             $_SESSION['errors'] = $validation->errors()->firstOfAll();
 
-            header('Location: ' . url('admin/products/create'));
+            header('Location: ' . url("admin/products/$id/edit"));
             exit;
         } else {
             $data = [
