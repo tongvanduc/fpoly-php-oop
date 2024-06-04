@@ -8,6 +8,11 @@ $router->before('GET|POST', '/admin/*.*', function() {
     if (!is_logged()) {
         header('location: ' . url('auth/login') );
         exit();
+    } 
+
+    if (!is_admin()) {
+        header('location: ' . url() );
+        exit();
     }
 });
 
