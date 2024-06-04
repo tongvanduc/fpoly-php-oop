@@ -28,5 +28,18 @@
                 <li><a href="{{ url('admin/products/create') }}">Thêm mới</a></li>
             </ul>
         </li>
+
+        <li class>
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <div class="icon_menu">
+                    <img src="{{ asset('assets/admin/img/menu-icon/5.svg') }}" alt>
+                </div>
+                <span>Người dùng</span>
+            </a>
+            <ul>
+                <li><a href="{{ url('admin/users') }}">Danh sách</a></li>
+                <li><a href="{{ url('admin/users/create') }}">Thêm mới</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
