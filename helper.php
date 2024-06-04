@@ -22,7 +22,7 @@ if (!function_exists('is_logged')) { // Check đã đăng nhập
 
 if (!function_exists('is_admin')) { // Check là admin
     function is_admin() {
-        return isset($_SESSION['user']) && $_SESSION['user']['type'] == 'admin';
+        return is_logged() && $_SESSION['user']['type'] == 'admin';
     }
 }
 

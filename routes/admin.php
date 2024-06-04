@@ -5,6 +5,7 @@ use Ductv44\PhpOop\Controllers\Admin\ProductController;
 use Ductv44\PhpOop\Controllers\Admin\UserController;
 
 $router->before('GET|POST', '/admin/*.*', function() {
+
     if (!is_logged()) {
         header('location: ' . url('auth/login') );
         exit();
@@ -14,6 +15,7 @@ $router->before('GET|POST', '/admin/*.*', function() {
         header('location: ' . url() );
         exit();
     }
+    
 });
 
 $router->mount('/admin', function () use ($router) {
